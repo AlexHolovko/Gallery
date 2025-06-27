@@ -1,0 +1,9 @@
+<data name="GalleryTitle" xml:space="preserve">
+  <value>Gallery</value>
+</data>
+<data name="CommentPlaceholder" xml:space="preserve">
+  <value>Comment...</value>
+</data>
+<data name="AddCommentButton" xml:space="preserve">
+  <value>Add Comment</value>
+</data>

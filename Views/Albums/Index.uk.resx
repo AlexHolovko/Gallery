@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="AlbumsTitle" xml:space="preserve">
+    <value>Альбоми</value>
+  </data>
+  <data name="ViewButton" xml:space="preserve">
+    <value>Переглянути</value>
+  </data>
+  <data name="CreateAlbumTitle" xml:space="preserve">
+    <value>Створити новий альбом</value>
+  </data>
+  <data name="AlbumNameLabel" xml:space="preserve">
+    <value>Назва альбому</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Опис</value>
+  </data>
+  <data name="CreateAlbumButton" xml:space="preserve">
+    <value>Створити альбом</value>
+  </data>
+  <data name="AlbumCreatedMessage" xml:space="preserve">
+    <value>Альбом успішно створено</value>
+  </data>
+</root>

@@ -1,0 +1,26 @@
+@model IEnumerable<Gallery.Models.Entities.Image>
+    @using Microsoft.AspNetCore.Mvc.Localization
+    @inject IViewLocalizer Localizer
+
+    <div class="container py-4">
+        <h2 class="mb-4 text-center">@Localizer["GalleryTitle"]</h2>
+
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+            @foreach (var image in Model)
+        {
+            <div class="card image-card" style="width: 300px;">
+                <img src="~/uploads/@image.FilePath" class="card-img-top" style="height: 250px; object-fit: cover;" alt="@image.Title" />
+                <div class="card-body">
+                    <h5 class="card-title">@image.Title</h5>
+                    <p class="text-muted">@image.UploadedAt.ToLocalTime().ToShortDateString()</p>
+
+                    <form asp-controller="Comment" asp-action="AddComment" method="post">
+                        <input type="hidden" name="imageId" value="@image.Id" />
+                        <textarea name="content" class="form-control mb-2" placeholder="@Localizer["CommentPlaceholder"]" required></textarea>
+                        <button class="btn btn-outline-secondary btn-sm w-100">@Localizer["AddCommentButton"]</button>
+                    </form>
+                </div>
+            </div>
+        }
+        </div>
+    </div>

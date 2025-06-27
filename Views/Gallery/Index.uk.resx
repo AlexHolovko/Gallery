@@ -1,0 +1,9 @@
+<data name="GalleryTitle" xml:space="preserve">
+  <value>Галерея</value>
+</data>
+<data name="CommentPlaceholder" xml:space="preserve">
+  <value>Коментар...</value>
+</data>
+<data name="AddCommentButton" xml:space="preserve">
+  <value>Додати коментар</value>
+</data>
